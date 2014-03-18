@@ -2,8 +2,8 @@
     {
       Link hare=first;                                                   //fast pointer
       Link tortoise=first;                                               //slow pointer
-      while(hare!=tortoise && hare.next!=null)
-      {
+      while(hare!=tortoise && hare.next!=null)                           //second condition avoids null pointer exception
+      {                                                                  //and checks for end of the linkedlist
         hare=hare.next.next;                                             //twice fast
         tortoise=tortoise.next;
       }
